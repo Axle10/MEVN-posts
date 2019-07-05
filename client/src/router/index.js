@@ -1,7 +1,6 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from '@/components/Home'
-import PageNotFound from '@/components/PageNotFound'
+import index from '@/components/index'
 
 Vue.use(Router)
 
@@ -9,13 +8,8 @@ export default new Router({
   routes: [
     {
       path: '/',
-      name: 'Home',
-      component: Home
-    },
-    {
-      path: '*',
-      name: 'PageNotFound',
-      component: PageNotFound
+      name: 'home',
+      component: index
     }
   ],
   mode: 'history'

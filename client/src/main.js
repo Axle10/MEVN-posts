@@ -3,10 +3,15 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
-import 'bootstrap'
-import 'bootstrap/dist/css/bootstrap.min.css'
+
+// Import vuetify
+import Vuetify from 'vuetify'
+import 'vuetify/dist/vuetify.min.css'
 
 Vue.config.productionTip = false
+
+// Vuetify middleware
+Vue.use(Vuetify)
 
 /* eslint-disable no-new */
 new Vue({

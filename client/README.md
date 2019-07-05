@@ -1,6 +1,6 @@
-# client
+# freeposts
 
-> It is the front end framework for an application that creates and deletes posts using MEVN Stack
+> A Vue.js project
 
 ## Build Setup
 

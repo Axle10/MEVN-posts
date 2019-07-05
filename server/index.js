@@ -3,6 +3,8 @@ const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 
+const config = require('./config.json')
+
 const app=express();
 
 // MiddleWare
@@ -13,7 +15,7 @@ app.use(cors());
 app.use('/api/posts',require('./api/posts'));
 
 // Mongo Db Connection
-mongoose.connect('mongodb+srv://Axle10:qwerty123456@nodepracticecluster1-igz5g.mongodb.net/postsdb?retryWrites=true',{useNewUrlParser : true});
+mongoose.connect(config.dbURI,{useNewUrlParser : true});
 
 // Port
 const port = process.env.PORT || 5000;

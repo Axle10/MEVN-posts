@@ -7,11 +7,14 @@ import router from './router'
 // Import vuetify
 import Vuetify from 'vuetify'
 import 'vuetify/dist/vuetify.min.css'
+import '@fortawesome/fontawesome-free/css/all.css'
 
 Vue.config.productionTip = false
 
 // Vuetify middleware
-Vue.use(Vuetify)
+Vue.use(Vuetify,{
+	iconfont: 'fa'
+})
 
 /* eslint-disable no-new */
 new Vue({
